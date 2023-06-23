@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abhishek</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div id="dot"></div>
+        <div class="container">
+            <nav>
+                <img class="logo " src="images/logo.png" alt="logo">
+                <ul id="sidemenu">
+                    <li class="Sframe"><a href="#header">Home</a></li>
+                    <li class="Sframe"><a href="#about">About</a></li>
+                    <li class="Sframe"><a href="#services">Skills</a></li>
+                    <li class="Sframe"><a href="#works">Work</a></li>
+                    <li class="Sframe"><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fa" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fa" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1 class="Lframe">Hi,I'm <span>Abhishek</span></h1>
+                <br>
+                <p class="Lframe">Web-Developer</p>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/user.jpg" alt="person">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a Bachelor student at the SV College of Engineering, undertaking the Computer Science
+                        course.<br>
+                        I’m an enthusiastic Full‑Stack Web‑Developer.<br>
+                        I’ve worked on technologies like HTML,CSS,JavaScript,MongoDB,Express JS,React JS,Node JS.<br>
+                        I enjoy exploring new technologies. <br>
+                        I am a quick learner with a fun, outgoing personality.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiances')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full-Stack Web-Development</span><br>Web app Development(MERN)</li>
+                            <li><span>Java Programming</span><br>Java fundamentals and programming.</li>
+                            <li><span>Python Programming</span><br>Python fundamentals and programming.</li>
+                            <li><span>Soft Skills</span><br>Communication skills<br>Analytical skills<br>Problem solving
+                                skills</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiances">
+                        <ul>
+                            <li><span>NOV 2022</span><br>Web-Developer & designer Intern @Oasis Infobyte</li>
+                            <li><span>OCT 2022</span><br>Web-Developer & designer Intern @Let's GrowMore</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-Present</span><br>B.tech(Computer Science & Engineering) at SVCE Tirupati
+                            </li>
+                            <li><span>2018-2020</span><br>Intemediate from Sri Chaitanya Educational Institutes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Skills section  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>» I spend my whole day, practically every day, experimenting with HTML, CSS, JavaScript, Node.Js,
+                        Express.Js, MongoDB & Reactjs.</p><br>
+
+                    <p> »I'm curious, and I enjoy work that challenges me to learn something new .</p><br>
+
+                    <p> »I build websites that delight and inform. I do it well.</p>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java Programming</h2>
+                    <p>»Understanding, analyzing, and implementing Java programs.</p><br>
+                    <p> »Core Java fundamentals and programming.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Programming</h2>
+                    <p>»Understanding, analyzing, and implementing programs.</p><br>
+
+                    <p> »Developing – Backend components to enhance performance.</p><br>
+
+                    <p> »Working with Python libraries like Pandas, NumPy, etc.</p><br>
+
+                    <p> »Core Python fundamentals and programming.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Works section -->
+
+    <div id="works">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Hunger-A Food Delivery App.png" alt="">
+                    <div class="layer">
+                        <h3>Hunger-A Food Delivery App</h3>
+                        <p>
+                            A food delivery app landing page <br>Made using html css bootstrap
+                        </p>
+                        <a href="https://sahspeaks.github.io/Hunger/" target="_ "><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Kinder-A dating App.png" alt="">
+                    <div class="layer">
+                        <h3>Kinder-A Dating App</h3>
+                        <p>A dating app landing page clone<br>Made using html css bootstrap</p>
+                        <a href="https://sahspeaks.github.io/Kinder/" target="_ "><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Calculator.png" alt="">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Calculator App<br>Made using html css bootstrap javascript</p>
+                        <a href="https://sahspeaks.github.io/Calculator/" target="_ "><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Temp-Converter.png" alt="">
+                    <div class="layer">
+                        <h3>Temperature-Converter</h3>
+                        <p>A Temperature-Converter App <br>Conversion between celcius & fahrenheit <br>Made using html
+                            css bootstrap javascript</p>
+                        <a href="https://sahspeaks.github.io/Temperature-Converter/" target="_ "><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Weather-App.png" alt="">
+                    <div class="layer">
+                        <h3>Weather-App</h3>
+                        <p>Weather-App <br>It takes city name and shows current temperature and possible MAX & MIN
+                            temperature<br>Made using html css bootstrap javascript nodejs expressjs OpenWeather's API
+                        </p>
+                        <a href="https://wetherapp-speaks.herokuapp.com" target="_ "><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ToDoList.png" alt="">
+                    <div class="layer">
+                        <h3>Todo List</h3>
+                        <p>Todo List with minimal interface <br>tasks can be added and deleted once completed <br>Made
+                            using html css bootstrap javascript nodejs expressjs MongoDB</p>
+                        <a href="https://todolist-app-iou8.onrender.com" target="_ "><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/News-App.png" alt="">
+                    <div class="layer">
+                        <h3>News Nation</h3>
+                        <p>News App<br>We can select country and category and it provides Top News<br>Made using html
+                            css bootstrap javascript nodejs expressjs News-API</p>
+                        <a href="https://sah-newsapp.herokuapp.com" target="_ "><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/contact.png" alt="">
+                    <div class="layer">
+                        <h3>Contact App</h3>
+                        <p>A React based contact app <br>Displays contact cards with call functionality <br>Made using
+                            React and bootstrap</p>
+                        <a href="https://contacts-app-red.vercel.app/" target="_ "><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/TextAnalyzer.png" alt="">
+                    <div class="layer">
+                        <h3>Text Analyser</h3>
+                        <p>A React based Word & character counting app <br>It also has download, read aloud & many more
+                            functionality <br>Made using React & Bootstrap</p>
+                        <a href="https://word-analyzer.vercel.app/" target="_ "><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/myNotes.png" alt="">
+                    <div class="layer">
+                        <h3>Notes App</h3>
+                        <p>A React based Notes taking app with Secured Authentication <br>Every user has their own
+                            database <br>Made using React Nodejs expressjs and MongoDB</p>
+                        <a href="https://makemynotes.netlify.app/" target="_ "><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Me section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>sahspeaks@gmail.com</p>
+                    <div class="social-icons">
+                        <a class="footer-link" href="https://www.linkedin.com/in/sahspeaks/" target="_ "><i
+                                class="fa-brands fa-linkedin fa-2x"></i></a>
+                        <a class="footer-link" href="https://github.com/sahspeaks" target="_ "><i
+                                class="fa-brands fa-github fa-2x"></i></a>
+                        <a class="footer-link" href="https://twitter.com/Sah_speaks" target="_ "><i
+                                class="fa-brands fa-twitter fa-2x"></i></a>
+                        <a class="footer-link" href="https://www.instagram.com/sah_speaks/" target="_ "><i
+                                class="foot-icons fa-brands fa-instagram fa-2x"></i></a>
+                    </div>
+                    <a href="images/AbhishekResume.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+        <p class="copyright">© 2023 Sah Abhishek Kumar</p>
+    </footer>
+
+    <!-- this script tag is for auto typing -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- this script tag is for animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        // below code is for auto type writing
+        var typed = new Typed("#header .header-text h1 span", {
+            strings: ['Abhishek'],
+            typeSpeed: 100,
+            backSpeed: 90,
+             backDelay: 1500,
+            loop: true,
+        });
+
+        // below code is circle hover in home page 
+        var Circle = document.querySelector("#header #dot");
+        var Lframes = document.querySelectorAll("#header .Lframe");
+        var Sframes = document.querySelectorAll("#header .Sframe");
+        // event is used to circle at the mouse point
+        window.addEventListener("mousemove", function (dets) {
+            gsap.to(Circle, {
+                x: dets.clientX,
+                y: dets.clientY,
+                duration: .2,
+                ease: Expo
+            })
+        });
+
+        Lframes.forEach(frame => {
+            // this event is used to increase the size of the mouse
+            frame.addEventListener("mousemove", function (dets) {
+                gsap.to(Circle, {
+                    scale: 5,
+                    opacity: .2,
+                });
+
+                Circle.style.border = "1px solid #11999E";
+                gsap.to(frame.children, {
+                    duration: .3,
+                });
+
+            });
+            // this event is used to decreses the size of the mouse
+            frame.addEventListener("mouseleave", function (dets) {
+                gsap.to(Circle, {
+                    scale: 1,
+                    opacity: 1,
+                })
+                gsap.to(frame, {
+                    duration: .3
+                })
+            });
+        });
+
+        Sframes.forEach(frame => {
+            // this event is used to increase the size of the mouse
+            frame.addEventListener("mousemove", function (dets) {
+                gsap.to(Circle, {
+                    scale: 3,
+                    opacity: .2,
+                });
+
+                Circle.style.border = "1px solid #11999E";
+                gsap.to(frame.children, {
+                    duration: .3,
+                });
+
+            });
+            // this event is used to decreses the size of the mouse
+            frame.addEventListener("mouseleave", function (dets) {
+                gsap.to(Circle, {
+                    scale: 1,
+                    opacity: 1,
+                })
+                gsap.to(frame, {
+                    duration: .3
+                })
+            });
+        });
+
+        // tablinks code
+        let tablinks = document.getElementsByClassName('tab-links');
+        let tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link')
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add('active-link')
+            document.getElementById(tabname).classList.add('active-tab')
+        }
+    </script>
+
+
+    <script>
+        let sidemenu = document.getElementById("sidemenu")
+        function openmenu() {
+            sidemenu.style.right = '0'
+        }
+        function closemenu() {
+            sidemenu.style.right = '-200px'
+        }
+
+    </script>
+
+
+</body>
+
+</html>
